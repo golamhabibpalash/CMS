@@ -16,5 +16,27 @@ namespace ClinicManagementSystemApp
         {
             InitializeComponent();
         }
+        int edit = 0;
+        public virtual void addBtn_Click(object sender, EventArgs e)
+        {
+            MainProgram.resetEnable(leftPanel);
+            edit = 0;
+        }
+
+        public virtual void editBtn_Click(object sender, EventArgs e)
+        {
+            edit = 1;
+            MainProgram.controlEnable(leftPanel);
+        }
+
+        public virtual void saveBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public virtual void deleteBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

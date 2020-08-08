@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace ClinicManagementSystemApp
 {
-    class MainClass
+    public class MainProgram
     {
         public static void sno(DataGridView gv, string snoGV)
         {
@@ -181,6 +181,156 @@ namespace ClinicManagementSystemApp
             }
         }
         public static ArrayList CheckConotrols(Panel p)
+        {
+            ArrayList arr = new ArrayList();
+            foreach (Control c in p.Controls)
+            {
+                if (c is TextBox)
+                {
+                    TextBox tb = (TextBox)c;
+                    if (tb.AllowDrop == true)
+                    {
+
+                    }
+                    else
+                    {
+                        if (tb.Text == "")
+                        {
+                            arr.Add(tb);
+                        }
+                        else
+                        {
+                            if (arr.Contains(tb))
+                            {
+                                arr.Remove(tb);
+                            }
+                        }
+                        tb.BackColor = tb.Text == "" ? tb.BackColor = Color.Firebrick : tb.BackColor = Color.White;
+                    }
+                }
+            }
+            return arr;
+        }
+        /////////////////////////////////////////////////////////
+        public static void resetEnable(FlowLayoutPanel p)
+        {
+            foreach (Control c in p.Controls)
+            {
+                if (c is TextBox)
+                {
+                    TextBox tb = (TextBox)c;
+                    tb.Text = "";
+                    tb.Enabled = true;
+                }
+                if (c is ComboBox)
+                {
+                    ComboBox cb = (ComboBox)c;
+                    cb.SelectedIndex = -1;
+                    cb.Enabled = true;
+                }
+                if (c is CheckBox)
+                {
+                    CheckBox cb = (CheckBox)c;
+                    cb.Checked = false;
+                    cb.Enabled = true;
+                }
+                if (c is RadioButton)
+                {
+                    RadioButton rb = (RadioButton)c;
+                    rb.Checked = false;
+                    rb.Enabled = true;
+                }
+
+            }
+        }
+        public static void resetDisable(FlowLayoutPanel p)
+        {
+            foreach (Control c in p.Controls)
+            {
+                if (c is TextBox)
+                {
+                    TextBox tb = (TextBox)c;
+                    tb.Text = "";
+                    tb.Enabled = false;
+                    tb.BackColor = Color.White;
+                }
+                if (c is ComboBox)
+                {
+                    ComboBox cb = (ComboBox)c;
+                    cb.SelectedIndex = -1;
+                    cb.Enabled = false;
+                    cb.BackColor = Color.White;
+                }
+                if (c is CheckBox)
+                {
+                    CheckBox cb = (CheckBox)c;
+                    cb.Checked = false;
+                    cb.Enabled = false;
+                }
+                if (c is RadioButton)
+                {
+                    RadioButton rb = (RadioButton)c;
+                    rb.Checked = false;
+                    rb.Enabled = false;
+                }
+
+            }
+        }
+        public static void controlEnable(FlowLayoutPanel p)
+        {
+            foreach (Control c in p.Controls)
+            {
+                if (c is TextBox)
+                {
+                    TextBox tb = (TextBox)c;
+                    tb.Enabled = true;
+                }
+                if (c is ComboBox)
+                {
+                    ComboBox cb = (ComboBox)c;
+                    cb.Enabled = true;
+                }
+                if (c is CheckBox)
+                {
+                    CheckBox cb = (CheckBox)c;
+                    cb.Enabled = true;
+                }
+                if (c is RadioButton)
+                {
+                    RadioButton rb = (RadioButton)c;
+                    rb.Enabled = true;
+                }
+
+            }
+        }
+        public static void ControlDisable(FlowLayoutPanel p)
+        {
+            foreach (Control c in p.Controls)
+            {
+                if (c is TextBox)
+                {
+                    TextBox tb = (TextBox)c;
+                    tb.Enabled = false;
+                }
+                if (c is ComboBox)
+                {
+                    ComboBox cb = (ComboBox)c;
+                    cb.Enabled = false;
+                }
+                if (c is CheckBox)
+                {
+                    CheckBox cb = (CheckBox)c;
+                    cb.Enabled = false;
+                }
+                if (c is RadioButton)
+                {
+                    RadioButton rb = (RadioButton)c;
+                    rb.Enabled = false;
+                }
+
+            }
+        }
+        public static ArrayList CheckConotrols(FlowLayoutPanel p)
         {
             ArrayList arr = new ArrayList();
             foreach (Control c in p.Controls)

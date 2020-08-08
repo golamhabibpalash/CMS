@@ -37,6 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.searchTBox = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.leftPanel.SuspendLayout();
             this.backButtonPanel.SuspendLayout();
             this.rightPanel.SuspendLayout();
@@ -62,6 +63,7 @@
             // 
             // right_Panel
             // 
+            this.right_Panel.Controls.Add(this.groupBox1);
             this.right_Panel.Controls.Add(this.panel1);
             this.right_Panel.Size = new System.Drawing.Size(560, 410);
             // 
@@ -117,6 +119,7 @@
             this.deleteBtn.TabIndex = 3;
             this.deleteBtn.Text = "&DELETE";
             this.deleteBtn.UseVisualStyleBackColor = true;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
             // 
             // saveBtn
             // 
@@ -130,6 +133,7 @@
             this.saveBtn.TabIndex = 2;
             this.saveBtn.Text = "&SAVE";
             this.saveBtn.UseVisualStyleBackColor = true;
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
             // editBtn
             // 
@@ -143,6 +147,7 @@
             this.editBtn.TabIndex = 1;
             this.editBtn.Text = "&EDIT";
             this.editBtn.UseVisualStyleBackColor = true;
+            this.editBtn.Click += new System.EventHandler(this.editBtn_Click);
             // 
             // addBtn
             // 
@@ -156,6 +161,7 @@
             this.addBtn.TabIndex = 0;
             this.addBtn.Text = "&Add";
             this.addBtn.UseVisualStyleBackColor = true;
+            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
             // 
             // label3
             // 
@@ -182,6 +188,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(240, 49);
             this.panel2.TabIndex = 0;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Location = new System.Drawing.Point(0, 49);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(560, 361);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Details";
             // 
             // Sample2
             // 
@@ -213,5 +229,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox searchTBox;
         private System.Windows.Forms.Panel panel2;
+        protected System.Windows.Forms.GroupBox groupBox1;
     }
 }

@@ -10,22 +10,11 @@ using System.Windows.Forms;
 
 namespace ClinicManagementSystemApp
 {
-    public partial class RoleForm : Sample2
+    public partial class UserForm : Sample2
     {
-        public RoleForm()
+        public UserForm()
         {
             InitializeComponent();
         }
-
-        public override void saveBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        public override void deleteBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }
