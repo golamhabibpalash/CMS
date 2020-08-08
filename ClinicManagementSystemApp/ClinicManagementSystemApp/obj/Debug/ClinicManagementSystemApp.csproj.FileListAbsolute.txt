@@ -1,0 +1,14 @@
+D:\GHPLS\Project\CMS\ClinicManagementSystemApp\ClinicManagementSystemApp\bin\Debug\ClinicManagementSystemApp.exe.config
+D:\GHPLS\Project\CMS\ClinicManagementSystemApp\ClinicManagementSystemApp\bin\Debug\ClinicManagementSystemApp.exe
+D:\GHPLS\Project\CMS\ClinicManagementSystemApp\ClinicManagementSystemApp\bin\Debug\ClinicManagementSystemApp.pdb
+D:\GHPLS\Project\CMS\ClinicManagementSystemApp\ClinicManagementSystemApp\bin\Debug\MainClass.dll
+D:\GHPLS\Project\CMS\ClinicManagementSystemApp\ClinicManagementSystemApp\bin\Debug\MainClass.pdb
+D:\GHPLS\Project\CMS\ClinicManagementSystemApp\ClinicManagementSystemApp\obj\Debug\ClinicManagementSystemApp.csprojAssemblyReference.cache
+D:\GHPLS\Project\CMS\ClinicManagementSystemApp\ClinicManagementSystemApp\obj\Debug\ClinicManagementSystemApp.Sample.resources
+D:\GHPLS\Project\CMS\ClinicManagementSystemApp\ClinicManagementSystemApp\obj\Debug\ClinicManagementSystemApp.Properties.Resources.resources
+D:\GHPLS\Project\CMS\ClinicManagementSystemApp\ClinicManagementSystemApp\obj\Debug\ClinicManagementSystemApp.csproj.GenerateResource.cache
+D:\GHPLS\Project\CMS\ClinicManagementSystemApp\ClinicManagementSystemApp\obj\Debug\ClinicManagementSystemApp.csproj.CoreCompileInputs.cache
+D:\GHPLS\Project\CMS\ClinicManagementSystemApp\ClinicManagementSystemApp\obj\Debug\ClinicManagementSystemApp.csproj.CopyComplete
+D:\GHPLS\Project\CMS\ClinicManagementSystemApp\ClinicManagementSystemApp\obj\Debug\ClinicManagementSystemApp.exe
+D:\GHPLS\Project\CMS\ClinicManagementSystemApp\ClinicManagementSystemApp\obj\Debug\ClinicManagementSystemApp.pdb
+D:\GHPLS\Project\CMS\ClinicManagementSystemApp\ClinicManagementSystemApp\obj\Debug\ClinicManagementSystemApp.Sample2.resources

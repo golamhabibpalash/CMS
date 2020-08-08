@@ -1,0 +1,6 @@
+D:\GHPLS\Project\CMS\ClinicManagementSystemApp\MainClass\obj\Debug\MainClass.csproj.CoreCompileInputs.cache
+D:\GHPLS\Project\CMS\ClinicManagementSystemApp\MainClass\bin\Debug\MainClass.dll
+D:\GHPLS\Project\CMS\ClinicManagementSystemApp\MainClass\bin\Debug\MainClass.pdb
+D:\GHPLS\Project\CMS\ClinicManagementSystemApp\MainClass\obj\Debug\MainClass.dll
+D:\GHPLS\Project\CMS\ClinicManagementSystemApp\MainClass\obj\Debug\MainClass.pdb
+D:\GHPLS\Project\CMS\ClinicManagementSystemApp\MainClass\obj\Debug\MainClass.csprojAssemblyReference.cache

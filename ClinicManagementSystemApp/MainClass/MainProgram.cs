@@ -1,21 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Data;
+using System.Collections;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.IO;
+using System.Windows.Forms;
+
 
 namespace ClinicManagementSystemApp
 {
     class MainClass
     {
+        public static void sno(DataGridView gv, string snoGV)
+        {
+            int count = 0;
+            foreach (DataGridViewRow row in gv.Rows)
+            {
+                count++;
+                row.Cells[snoGV].Value = count;
+            }
+        }
+
         private static string path;
         private static string connectionString()
         {
-            path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\rms_connect";
+            path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\ccms_connect";
             if (File.Exists(path))
             {
                 return File.ReadAllText(path);
@@ -94,12 +102,14 @@ namespace ClinicManagementSystemApp
                     TextBox tb = (TextBox)c;
                     tb.Text = "";
                     tb.Enabled = false;
+                    tb.BackColor = Color.White;
                 }
                 if (c is ComboBox)
                 {
                     ComboBox cb = (ComboBox)c;
                     cb.SelectedIndex = -1;
                     cb.Enabled = false;
+                    cb.BackColor = Color.White;
                 }
                 if (c is CheckBox)
                 {
@@ -170,5 +180,35 @@ namespace ClinicManagementSystemApp
 
             }
         }
+        //public static ArrayList CheckConotrols(Panel p)
+        //{
+        //    ArrayList arr = new ArrayList();
+        //    foreach (Control c in p.Controls)
+        //    {
+        //        if (c is TextBox)
+        //        {
+        //            TextBox tb = (TextBox)c;
+        //            if (tb.AllowDrop==true)
+        //            {
+
+        //            }
+        //            else
+        //            {
+        //                if (tb.Text=="")
+        //                {
+        //                    arr.Add(tb);
+        //                }
+        //                else
+        //                {
+        //                    if (arr.Contains(tb))
+        //                    {
+        //                        arr.Remove(tb);
+        //                    }
+        //                }
+        //                tb.BackColor = tb.Text == "" ? tb.BackColor = Color.Firebrick : tb.BackColor = Color.White;
+        //            }
+        //        }
+        //    }
+        //}
     }
 }
