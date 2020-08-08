@@ -180,35 +180,36 @@ namespace ClinicManagementSystemApp
 
             }
         }
-        //public static ArrayList CheckConotrols(Panel p)
-        //{
-        //    ArrayList arr = new ArrayList();
-        //    foreach (Control c in p.Controls)
-        //    {
-        //        if (c is TextBox)
-        //        {
-        //            TextBox tb = (TextBox)c;
-        //            if (tb.AllowDrop==true)
-        //            {
+        public static ArrayList CheckConotrols(Panel p)
+        {
+            ArrayList arr = new ArrayList();
+            foreach (Control c in p.Controls)
+            {
+                if (c is TextBox)
+                {
+                    TextBox tb = (TextBox)c;
+                    if (tb.AllowDrop == true)
+                    {
 
-        //            }
-        //            else
-        //            {
-        //                if (tb.Text=="")
-        //                {
-        //                    arr.Add(tb);
-        //                }
-        //                else
-        //                {
-        //                    if (arr.Contains(tb))
-        //                    {
-        //                        arr.Remove(tb);
-        //                    }
-        //                }
-        //                tb.BackColor = tb.Text == "" ? tb.BackColor = Color.Firebrick : tb.BackColor = Color.White;
-        //            }
-        //        }
-        //    }
-        //}
+                    }
+                    else
+                    {
+                        if (tb.Text == "")
+                        {
+                            arr.Add(tb);
+                        }
+                        else
+                        {
+                            if (arr.Contains(tb))
+                            {
+                                arr.Remove(tb);
+                            }
+                        }
+                        tb.BackColor = tb.Text == "" ? tb.BackColor = Color.Firebrick : tb.BackColor = Color.White;
+                    }
+                }
+            }
+            return arr;
+        }
     }
 }
